@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <!--定义表格文件，指定第二例允许收缩，，第三列循序拉伸-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="1"
+        android:stretchColumns="2">
+
+
+        <TableRow>
+
+        </TableRow>
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="39dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView"
+
+            android:layout_weight="0.53" />
+    </TableLayout>
+    <!--定义第二个表格文件，制定第二列隐藏-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第一个Button"
+                android:id="@+id/bn4_1" />
+
+            <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第二个Button"
+                android:id="@+id/bn4_2" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="48dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView2"
+
+            android:layout_weight="0.53" />
+
+    </TableLayout>
+    <!--定义第三个表格文件，指定第二列和第三列可以被拉伸-->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第三个Button"
+            android:id="@+id/bn4_3" />
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView3"
+
+            android:layout_weight="0.53" />
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第四个Button"
+                android:id="@+id/bn4_4" />
+
+        </TableRow>
+        <TableRow></TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:id="@+id/bn4_5"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>
